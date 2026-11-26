@@ -15,4 +15,16 @@ An AI-powered full-stack productivity and workflow management application built 
 * **Database:** SQLite
 
 ## Local Setup & Installation
+1.Install dependencies:
+pip install -r requirements.txt
 
+2.Configure Environment Variables:
+GEMINI_API_KEY=your_gemini_api_key_here
+
+3.Start the FastAPI Backend:
+cd backend
+python -m uvicorn main:app --reload
+
+4.Launch the Streamlit Frontend (in a new terminal):
+cd frontend
+python -m streamlit run app.py
